@@ -1,0 +1,6 @@
+./*.csv
+./.idea
+./.ipynb_checkpoints
+./.scrapy
+./bili/__pycache__
+./bili/bili/__pycache__
