@@ -1,7 +1,7 @@
 # bili_up
 
 ## About bili_up
-a python based spider to generate the WordCloud of the bilibili uploder
+A python based spider to generate the WordCloud of the bilibili uploder
 
 ## How to use
 step1> run : `pip install -r requirement.txt`  
