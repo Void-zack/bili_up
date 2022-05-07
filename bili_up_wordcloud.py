@@ -1,6 +1,7 @@
+import sys
 import wordcloud
 import pandas as pd
-UID = '1339327684'
+UID = sys.argv[1]
 tags = pd.read_csv(f'UID-{UID}.csv', header=None)
 tags.columns=['tag']
 wtags = tags.groupby('tag').size()

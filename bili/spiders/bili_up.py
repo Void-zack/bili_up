@@ -5,9 +5,10 @@ from bili.items import BiliItem
 
 class BiliUpSpider(scrapy.Spider):
     name = 'bili_up'
-    UID = '1339327684'
     allowed_domains = ['bilibili.com']
-    start_urls = ['http://api.bilibili.com/x/space/arc/search?mid='+UID]
+    def __init__(self, **kwargs):
+        self.UID = kwargs["UID"]
+        self.start_urls = ['http://api.bilibili.com/x/space/arc/search?mid='+self.UID]
 
     def parse(self, response):
         vlurls = [response.url+'&pn=1']
